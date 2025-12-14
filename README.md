@@ -52,10 +52,4 @@ Figures included in results/figures/ correspond to outputs shown in the notebook
 ## Sprint 3 Status
 Sprint 3 is complete. The repository includes documented modeling code, reproducible results, regression tables, and figures suitable for policy and equity-focused interpretation.
 
-Sprint 4 will focus on refining interpretation and communicating findings to a non-technical audience.
-"""
-
-with open("README.md", "w") as f:
-    f.write(readme_text)
-
-print("README.md created successfully.")
+Sprint 4 will focus on refining interpretation and communicating findings to a non-technical audience in a presnetation and then video form.
