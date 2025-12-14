@@ -20,31 +20,12 @@ data/Hospital_General_Information_2016_2020.csv
 The dataset is filtered to Maryland hospitals and the 2020 reporting year.
 
 ## Repository Structure
-md-hospital-sprints/
-│
-├── data/
-│   └── Hospital_General_Information_2016_2020.csv
-│
-├── notebooks/
-│   └── Sprint3_Modeling.ipynb
-│
-├── results/
-│   ├── figures/
-│   │   ├── fig1_residuals_vs_fitted.png
-│   │   └── fig2_coefficient_plot.png
-│   │
-│   └── tables/
-│       ├── table1_main_regression_results.csv
-│       └── table2_model_comparison.csv
-│
-└── README.md
-
+md-hospital-sprints holds all three main folders. notebooks holds my jupyter notebook download with my code, csvs for both my original and then cleaned up CSVs, and then results that holds snippets derrived from my notebook of the required figures and tables. 
 
 ## Modeling and Analysis
 The primary analysis uses an ordinary least squares (OLS) regression to estimate the relationship between hospital star ratings and institutional and geographic characteristics. The main model includes hospital ownership type, emergency service availability, and county indicator variables.
 
 A baseline mean-only model is estimated for comparison. Model evaluation focuses on explanatory power, coefficient interpretation, and regression diagnostics rather than prediction accuracy.
-
 
 ## Model Artifacts
 Because this project emphasizes interpretability over deployment, model artifacts are not saved as serialized objects. Instead:
@@ -53,7 +34,6 @@ Because this project emphasizes interpretability over deployment, model artifact
 - Diagnostic and interpretive figures are stored in results/figures/
 
 This approach aligns with standard QSSR practices for transparency and reproducibility.
-
 
 ## Results and Figures
 Figures used in the Sprint 3 report are stored in results/figures/ and include:
@@ -68,7 +48,6 @@ Regression result tables and model comparison summaries are stored in results/ta
 3. The notebook reproduces all models, tables, and figures discussed in the Sprint 3 report
 
 Figures included in results/figures/ correspond to outputs shown in the notebook.
-
 
 ## Sprint 3 Status
 Sprint 3 is complete. The repository includes documented modeling code, reproducible results, regression tables, and figures suitable for policy and equity-focused interpretation.
