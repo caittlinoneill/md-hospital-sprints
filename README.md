@@ -20,7 +20,19 @@ data/Hospital_General_Information_2016_2020.csv
 The dataset is filtered to Maryland hospitals and the 2020 reporting year.
 
 ## Repository Structure
-md-hospital-sprints holds all three main folders. notebooks holds my jupyter notebook download with my code, csvs for both my original and then cleaned up CSVs, and then results that holds snippets derrived from my notebook of the required figures. Regression tables are included in the notebook output and in the Sprint 3 PDF. I attempted to upload the CSV table exports to the repository, but GitHub browser upload was inconsistent, so the notebook serves as the source of truth for tabular outputs.
+All project files are stored at the top level of the repository for simplicity.
+- `Hospital_General_Information_2016_2020.csv`  
+  Raw CMS hospital data covering multiple years.
+- `md_hospitals_cleaned_2020.csv`  
+  Cleaned dataset restricted to Maryland hospitals used for analysis.
+- `sprint-data.ipynb`  
+  Jupyter notebook containing all data cleaning, exploratory analysis, regression modeling, and diagnostics.
+- `fig1_residuals_vs_fitted.png`  
+  Residuals vs. fitted values plot used to evaluate linear regression assumptions.
+- `fig2_coefficient_plot.png`  
+  Coefficient plot showing estimated effects of county and hospital ownership on star ratings.
+- `README.md`  
+  Project documentation (this document)
 
 ## Modeling and Analysis
 The primary analysis uses an ordinary least squares (OLS) regression to estimate the relationship between hospital star ratings and institutional and geographic characteristics. The main model includes hospital ownership type, emergency service availability, and county indicator variables.
